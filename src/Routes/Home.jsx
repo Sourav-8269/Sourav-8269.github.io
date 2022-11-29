@@ -1,16 +1,20 @@
+import { Heading,Image,Box } from '@chakra-ui/react'
 import React from 'react'
 
 const Home = () => {
   return (
-    <div display="flex">
+    <>
         <div >
-            <h3>Hello, my name is</h3>
-            <h1>Sourav Kumar Sahu</h1>
+            <Heading as="h3">Hello, my name is</Heading>
+            <Heading>Sourav Kumar Sahu</Heading>
         </div>
+        <Box boxSize='sm' display="flex" justifyContent="center" width="90%" ml={50}>
+            <Image  borderRadius='full'   src="https://iili.io/HKLa8ba.png"></Image>
+        </Box>
         <div>
-            <img src="https://drive.google.com/file/d/1OIcTh0OaGg_sPaLfBjTluAb_Vh7DlmGZ/view?usp=sharing" alt="" />
+          {/* <Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' /> */}
         </div>
-    </div>
+    </>
   )
 }
 
