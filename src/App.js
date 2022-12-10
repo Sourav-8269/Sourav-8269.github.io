@@ -2,13 +2,27 @@ import logo from './logo.svg';
 import './App.css';
 import MainRoute from './Routes/MainRoute';
 import Simple from './Components/navbar';
+import About from './Routes/About';
+import Skills from './Routes/Skills';
+import Home from './Routes/Home';
+import Projects from './Routes/Projects';
+import Contact from './Routes/Contact';
 
 function App() {
   return (
     <div className="App">
-
       <Simple />
-      <MainRoute/>
+      <Home/>
+      <About/>
+      <Skills/>
+      <Projects/>
+      <Contact/>
+
+      {/* <MainRoute/> */}
+      {/* <section id="#skills">
+        <Skills/>
+      </section> */}
+      {/* <About/> */}
     
     </div>
   );

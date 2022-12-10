@@ -18,30 +18,38 @@ import {
   useColorMode,
   Stack,
 } from '@chakra-ui/react';
+import { Link } from 'react-scroll';
 import { HamburgerIcon, CloseIcon,MoonIcon,SunIcon } from '@chakra-ui/icons';
-import {NavLink,Link} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 
 // const Links = ['Dashboard', 'Projects', 'Team'];
 const links=[
   {
-    to:"/",
+    // to:"/",
+    id:1,
     title:"Home"
   },
   {
-    to:"/about",
+    // to:"/about",
+    id:2,
     title:"About"
   },
   {
-    to:"/skills",
+    id:3,
+
+    // to:"/skills",
     title:"Skills"
   },
   {
-    to:"/contact",
-    title:"Contact"
+    id:4,
+
+    // to:"/contact",
+    title:"Projects"
   },
   {
-    to:"/projects",
-    title:"Projects"
+    id:5,
+    // to:"/project",
+    title:"Contact"
   },
 
 ]
@@ -66,12 +74,12 @@ export default function Simple() {
 
   let activeStyle = {
     textDecoration: "none",
-    color: "grey"
+    color: "red"
   };
 
   let normalStyle = {
     textDecoration: "none",
-    color: "black"
+    // color: "black"
   };
 
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -79,16 +87,17 @@ export default function Simple() {
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
-        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} position="fixed" overflow="visible" top="0" zIndex="1" width="100%" mb="15%" >
+        <Flex h={16} alignItems={'center'} justifyContent={'space-between'} >
           <IconButton
             size={'md'}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
+            
           />
-          <HStack spacing={8} alignItems={'center'}>
+          <HStack spacing={8} alignItems={'center'} >
             <Link to="/">
             <Box>Logo</Box>
             </Link>
@@ -111,19 +120,35 @@ export default function Simple() {
              spacing={4}
              display={{ base: 'none', md: 'flex' }}>
             {links.map((link) => (
-              <NavLink
-                key={link.title}
+              // <NavLink
+              <Link
+              smooth duration={1000}
+              
+            
+              as={NavLink}
+              
+                key={link.id}
                 
-                style={({ isActive }) => (isActive ? activeStyle : normalStyle)}
-                to={link.to}
-                end
+                // {({ _Active }) => (isActive ? activeStyle : normalStyle)}
+                to={link.title}
+                _activeLink={{
+                  color:"red.800",
+                  bgColor:"blue"
+                  }}
+                // end
               >
-                {link.title}
-              </NavLink>
+                
+                <Box _hover={{color:"red.500",cursor:"pointer",textUnderlinePosition:"#2D3748"}}
+                fontWeight="bold"
+    _groupHover={{ color: 'tomato' }}>
+                  {link.title}
+                  </Box>
+              </Link>
+              // </NavLink>
       ))}
             </HStack>
           </HStack>
-          <Flex alignItems={'center'}>
+          <Flex alignItems={'center'} >
             <Menu>
               <MenuButton
                 as={Button}
@@ -149,17 +174,20 @@ export default function Simple() {
         </Flex>
 
         {isOpen ? (
-          <Box pb={4} display={{ md: 'none' }}>
+          <Box pb={4} display={{ md: 'none' }} >
             <Stack as={'nav'} spacing={4}>
             {links.map((link) => (
-              <NavLink
-                key={link.title}
-                style={({ isActive }) => (isActive ? activeStyle : normalStyle)}
-                to={link.to}
-                end
+              <Link
+              smooth duration={1000}
+
+                key={link.id}
+                _hover={{ bg: '#0D74FF' }}
+                // style={({ isActive }) => (isActive ? activeStyle : normalStyle)}
+                to={link.title}
+                // end
               >
                 {link.title}
-              </NavLink>
+              </Link>
       ))}
             </Stack>
           </Box>

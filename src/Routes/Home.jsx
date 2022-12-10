@@ -1,20 +1,45 @@
-import { Heading,Image,Box } from '@chakra-ui/react'
 import React from 'react'
+import { Box,Stack,HStack,Heading,VStack ,Image,Button} from '@chakra-ui/react'
+import About from './About'
+import Projects from './Projects'
+import { useEffect } from 'react'
+import AOS from "aos"
+import Typewriter from 'typewriter-effect';
 
 const Home = () => {
+  useEffect(() => {
+   AOS.init({delay:100});
+  }, []);
   return (
-    <>
-        <div >
-            <Heading as="h3">Hello, my name is</Heading>
-            <Heading>Sourav Kumar Sahu</Heading>
-        </div>
-        <Box boxSize='sm' display="flex" justifyContent="center" width="90%" ml={50}>
-            <Image  borderRadius='full'   src="https://iili.io/HKLa8ba.png"></Image>
-        </Box>
-        <div>
-          {/* <Image src='https://bit.ly/dan-abramov' alt='Dan Abramov' /> */}
-        </div>
-    </>
+    <Box display="flex" name="Home" padding="5%"  data-aos="fade-right">
+      <Stack margin="auto" width="80%" border="1px solid red" justifyContent="space-between" direction={{ lg: "row",xl:"row", md: "row",base:"column-reverse"   }} >
+      <VStack alignItems="self-start"  mt="5%" >
+      
+        <Heading textAlign="left" mb={3} as="h2" fontSize="27px" >Hello, my name is</Heading>
+        <Heading textAlign="left" mb={5} as="h1" size="xl" >Sourav Kumar Sahu</Heading>
+        <Heading display="flex" textAlign="left" >I'm a&nbsp;<Heading color="red.500"><Typewriter
+  options={{
+    
+    strings: [' Web Developer.', ' Full Stack Web Developer.'],
+    autoStart: true,
+    loop: true,
+  }}
+/></Heading></Heading>
+        <HStack>
+          <Button colorScheme="red">Resume</Button>
+          <Button colorScheme="red">GitHub</Button>
+          <Button colorScheme="red">LinkedIn</Button>
+        </HStack>
+      </VStack>
+      <VStack  borderRadius="105px" justifyContent="right" alignContent="right">
+        
+      <Image src="https://i.ibb.co/37WKs1W/1-removebg-preview-2-removebg-preview.png"></Image>
+      </VStack>
+      </Stack>
+      
+      {/* <About/> */}
+      {/* <Projects/> */}
+    </Box>
   )
 }
 
