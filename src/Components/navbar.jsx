@@ -99,7 +99,7 @@ export default function Simple() {
           />
           <HStack spacing={8} alignItems={'center'} >
             <Link to="/">
-            <Box>Logo</Box>
+            <Box fontWeight="bold" >Sourav</Box>
             </Link>
             {/* <HStack
               as={'nav'}

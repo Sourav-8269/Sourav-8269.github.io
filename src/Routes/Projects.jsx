@@ -34,7 +34,7 @@ const Projects = () => {
   return (
     <div  >
       <Box name="Projects" data-aos="zoom-out-up" width="80%" m="auto" mt="25%" >
-      <Heading   padding="5%" fontFamily="sans-serif" fontWeight="500">ABOUT ME</Heading>
+      <Heading   padding="5%" fontFamily="sans-serif" fontWeight="500">MY PROJECTS</Heading>
       <Stack direction={{ lg: "row",xl:"row","2xl":"row", md: "column",base:"column",sm:"column" }} spacing="50px">
         {/* center */}
       <Box  >

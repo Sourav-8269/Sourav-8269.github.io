@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box,Stack,HStack,Heading,VStack ,Image,Button} from '@chakra-ui/react'
+import { Box,Stack,HStack,Heading,VStack ,Image,Button,Link} from '@chakra-ui/react'
 import About from './About'
 import Projects from './Projects'
 import { useEffect } from 'react'
@@ -12,7 +12,7 @@ const Home = () => {
   }, []);
   return (
     <Box display="flex" name="Home" padding="5%"  data-aos="fade-right">
-      <Stack margin="auto" width="80%" border="1px solid red" justifyContent="space-between" direction={{ lg: "row",xl:"row", md: "row",base:"column-reverse"   }} >
+      <Stack margin="auto" width="80%" justifyContent="space-between" direction={{ lg: "row",xl:"row", md: "row",base:"column-reverse"   }} >
       <VStack alignItems="self-start"  mt="5%" >
       
         <Heading textAlign="left" mb={3} as="h2" fontSize="27px" >Hello, my name is</Heading>
@@ -26,7 +26,9 @@ const Home = () => {
   }}
 /></Heading></Heading>
         <HStack>
-          <Button colorScheme="red">Resume</Button>
+        {/* <Link href='./Downloads/Sourav_Sahu_Resume.pdf' isExternal>Chkara</Link>
+          <a href="./Downloads/Sourav_Sahu_Resume.pdf" download={true}>Resume</a>*/}
+          <a href="./Downloads/Sourav_Sahu_Resume.txt" download={true} ><Button colorScheme="red">Resume</Button></a> 
           <Button colorScheme="red">GitHub</Button>
           <Button colorScheme="red">LinkedIn</Button>
         </HStack>
