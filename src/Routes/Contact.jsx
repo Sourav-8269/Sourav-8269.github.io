@@ -107,6 +107,7 @@ const sendEmail = (e) => {
                     mt={{ lg: 10, md: 10 }}
                     spacing={5}
                     px={5}
+                    ml="10%"
                     alignItems="flex-start">
                       <a href="https://www.linkedin.com/in/sourav-kumar-sahu-51b444249/" target="_blank">
                     <IconButton
@@ -141,7 +142,7 @@ const sendEmail = (e) => {
                   </HStack>
                 </Box>
               </WrapItem>
-              <WrapItem>
+              {/* <WrapItem>
                 <Box bg="white" borderRadius="lg">
                   <Box m={8} color="#0B0E3F">
                     <VStack spacing={5}>
@@ -191,7 +192,7 @@ const sendEmail = (e) => {
                     </VStack>
                   </Box>
                 </Box>
-              </WrapItem>
+              </WrapItem> */}
             </Wrap>
           </Box>
         </Box>

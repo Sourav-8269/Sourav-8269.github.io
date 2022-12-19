@@ -18,7 +18,7 @@ function App() {
       <Skills/>
       <Github/>
       <Projects/>
-      {/* <Contact/> */}
+      <Contact/>
 
       {/* <MainRoute/> */}
       {/* <section id="#skills">
