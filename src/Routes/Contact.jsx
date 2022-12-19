@@ -31,11 +31,25 @@ import {EmailIcon} from "@chakra-ui/icons"
 import { useEffect } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css"
+import emailjs from "emailjs-com"
 
 export default function Contact() {
   useEffect(()=>{
     AOS.init({delay:400});
 },[])
+
+const sendEmail = (e) => {
+  // e.preventDefault();
+  console.log(e)
+
+  emailjs.sendForm('gmail', 'template_c4xyocd', e.target, 'SZBvLMLdIX3Rn_hSf')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+    e.reset();
+};
   return (
     <Container  name="Contact"  maxW="full" mt={0} centerContent overflow="hidden" padding="2%"  >
       <Flex>
@@ -138,7 +152,7 @@ export default function Contact() {
                             pointerEvents="none"
                             children={<BsPerson color="gray.800" />}
                           />
-                          <Input type="text" size="md" />
+                          <Input type="text" size="md" name="name" />
                         </InputGroup>
                       </FormControl>
                       <FormControl id="name">
@@ -148,7 +162,7 @@ export default function Contact() {
                             pointerEvents="none"
                             children={<MdOutlineEmail color="gray.800" />}
                           />
-                          <Input type="text" size="md" />
+                          <Input type="text" size="md" email="email" />
                         </InputGroup>
                       </FormControl>
                       <FormControl id="name">
@@ -159,6 +173,7 @@ export default function Contact() {
                             borderRadius: 'gray.300',
                           }}
                           placeholder="message"
+                          message="message"
                         />
                       </FormControl>
                       <FormControl id="name" float="right">
@@ -166,7 +181,10 @@ export default function Contact() {
                           variant="solid"
                           bg="#0D74FF"
                           color="white"
-                          _hover={{}}>
+                          _hover={{}}
+                          
+                          onClick={(e)=>sendEmail(e)}
+                          >
                           Send Message
                         </Button>
                       </FormControl>
