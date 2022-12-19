@@ -9,10 +9,10 @@ import pdf from "../Downloads/Sourav_Sahu_Resume.pdf"
 
 const Home = () => {
   useEffect(() => {
-   AOS.init({delay:100});
+   AOS.init({delay:400});
   }, []);
   return (
-    <Box display="flex" name="Home" padding="5%"  data-aos="fade-right">
+    <Box display="flex" name="Home" padding="5%"  data-aos="fade-right" mt="7%">
       <Stack margin="auto" width="80%" justifyContent="space-between" direction={{ lg: "row",xl:"row", md: "row",base:"column-reverse"   }} >
       <VStack alignItems="self-start"  mt="5%" >
       
