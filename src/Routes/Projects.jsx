@@ -39,7 +39,7 @@ const Projects = () => {
         {/* center */}
       <Box  >
         <Image  src={IMAGE[0]}></Image>
-        <Box border="5px solid #2D3748" borderTop="2px solid #2D3748" mb={10} >
+        <Box border="5px solid whitesmoke" borderTop="2px solid whitesmoke" mb={10} >
 
         <HStack height="40px"  m={5}  >
           <FaReact size="fa-lg" />
@@ -54,16 +54,16 @@ const Projects = () => {
           wellness, and fashion products across websites, mobile
           apps, and 100+ offline stores.</Heading>
         <HStack m={5} justifyContent="space-around" >
-          <a href="http://" target="_blank" rel="noopener noreferrer"><FaVideo size="40px"/></a>
+          {/* <a href="http://" target="_blank" rel="noopener noreferrer"><FaVideo size="40px"/></a> */}
           <a href="https://nykaaone.vercel.app/" target="_blank" rel="noopener noreferrer"><FaEye height="20px" size="40px" /></a>
-          <a href="http://" target="_blank" rel="noopener noreferrer"><FaGithub size="40px"/></a>
+          <a href="https://github.com/Sourav-8269/Nykaa-Clone" target="_blank" rel="noopener noreferrer"><FaGithub size="40px"/></a>
         </HStack>
         </Box>
       </Box>
       
       <Box  >
         <Image  src={IMAGE[1]}></Image>
-        <Box border="5px solid #2D3748" borderTop="2px solid #2D3748" >
+        <Box border="5px solid whitesmoke" borderTop="2px solid whitesmoke" >
         <HStack height="40px"  m={5}  >
           <FaReact size="fa-lg" />
           <FaHtml5 size="fa-lg" />
@@ -78,9 +78,9 @@ const Projects = () => {
           wellness, and fashion products across websites, mobile
           apps, and 100+ offline stores.</Heading>
           <HStack m={5} justifyContent="space-around" >
-          <a href="http://" target="_blank" rel="noopener noreferrer"><FaVideo size="40px"/></a>
-          <a href="https://nykaaone.vercel.app/" target="_blank" rel="noopener noreferrer"><FaEye height="20px" size="40px" /></a>
-          <a href="http://" target="_blank" rel="noopener noreferrer"><FaGithub size="40px"/></a>
+          {/* <a href="http://" target="_blank" rel="noopener noreferrer"><FaVideo size="40px"/></a> */}
+          <a href="https://calm-florentine-38a27c.netlify.app/" target="_blank" rel="noopener noreferrer"><FaEye height="20px" size="40px" /></a>
+          <a href="https://github.com/sudiptapramanik209/happy-notebook-3138" target="_blank" rel="noopener noreferrer"><FaGithub size="40px"/></a>
         </HStack> 
         </Box>
         
@@ -91,7 +91,7 @@ const Projects = () => {
       {/* center */}
       <Box  >
         <Image  src={IMAGE[0]}></Image>
-        <Box border="5px solid #2D3748" borderTop="2px solid #2D3748" >
+        <Box border="5px solid whitesmoke" borderTop="2px solid whitesmoke" >
 
         <HStack height="40px"  m={5}  >
           <FaReact size="fa-lg" />
@@ -106,16 +106,16 @@ const Projects = () => {
           wellness, and fashion products across websites, mobile
           apps, and 100+ offline stores.</Heading>
         <HStack m={5} justifyContent="space-around" >
-          <a href="http://" target="_blank" rel="noopener noreferrer"><FaVideo size="40px"/></a>
+          {/* <a href="http://" target="_blank" rel="noopener noreferrer"><FaVideo size="40px"/></a> */}
           <a href="https://nykaaone.vercel.app/" target="_blank" rel="noopener noreferrer"><FaEye height="20px" size="40px" /></a>
-          <a href="http://" target="_blank" rel="noopener noreferrer"><FaGithub size="40px"/></a>
+          <a href="https://github.com/Sourav-8269/Nykaa-Clone" target="_blank" rel="noopener noreferrer"><FaGithub size="40px"/></a>
         </HStack>
         </Box>
       </Box>
       
       <Box  >
         <Image  src={IMAGE[1]}></Image>
-        <Box border="5px solid #2D3748" borderTop="2px solid #2D3748" >
+        <Box border="5px solid whitesmoke" borderTop="2px solid whitesmoke" >
         <HStack height="40px"  m={5}  >
           <FaReact size="fa-lg" />
           <FaHtml5 size="fa-lg" />
@@ -130,9 +130,9 @@ const Projects = () => {
           wellness, and fashion products across websites, mobile
           apps, and 100+ offline stores.</Heading>
           <HStack m={5} justifyContent="space-around" >
-          <a href="http://" target="_blank" rel="noopener noreferrer"><FaVideo size="40px"/></a>
-          <a href="https://nykaaone.vercel.app/" target="_blank" rel="noopener noreferrer"><FaEye height="20px" size="40px" /></a>
-          <a href="http://" target="_blank" rel="noopener noreferrer"><FaGithub size="40px"/></a>
+          {/* <a href="http://" target="_blank" rel="noopener noreferrer"><FaVideo size="40px"/></a> */}
+          <a href="https://calm-florentine-38a27c.netlify.app/" target="_blank" rel="noopener noreferrer"><FaEye height="20px" size="40px" /></a>
+          <a href="https://github.com/sudiptapramanik209/happy-notebook-3138" target="_blank" rel="noopener noreferrer"><FaGithub size="40px"/></a>
         </HStack> 
         </Box>
         

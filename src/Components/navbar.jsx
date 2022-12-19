@@ -21,7 +21,7 @@ import {
 import { Link } from 'react-scroll';
 import { HamburgerIcon, CloseIcon,MoonIcon,SunIcon } from '@chakra-ui/icons';
 import {NavLink} from "react-router-dom"
-
+import pdf from "../Downloads/Sourav_Sahu_Resume.pdf"
 // const Links = ['Dashboard', 'Projects', 'Team'];
 const links=[
   {
@@ -145,7 +145,8 @@ export default function Simple() {
                   </Box>
               </Link>
               // </NavLink>
-      ))}
+              ))}
+             <a href={pdf} download ><Button fontWeight="bold" >Resume</Button></a> 
             </HStack>
           </HStack>
           <Flex alignItems={'center'} >

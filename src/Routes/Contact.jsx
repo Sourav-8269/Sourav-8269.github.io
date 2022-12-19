@@ -37,7 +37,7 @@ export default function Contact() {
     AOS.init({delay:400});
 },[])
   return (
-    <Container  name="Contact"  maxW="full" mt={0} centerContent overflow="hidden" padding="2%">
+    <Container  name="Contact"  maxW="full" mt={0} centerContent overflow="hidden" padding="2%"  >
       <Flex>
         <Box
         data-aos="flip-up"
@@ -45,7 +45,8 @@ export default function Contact() {
           color="white"
           borderRadius="lg"
           m={{ sm: 4, md: 16, lg: 10 }}
-          p={{ sm: 5, md: 5, lg: 16 }}>
+          p={{ sm: 5, md: 5, lg: 16 }}
+          >
           <Box p={4}>
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
