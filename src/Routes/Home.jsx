@@ -5,6 +5,7 @@ import Projects from './Projects'
 import { useEffect } from 'react'
 import AOS from "aos"
 import Typewriter from 'typewriter-effect';
+import pdf from "../Downloads/Sourav_Sahu_Resume.pdf"
 
 const Home = () => {
   useEffect(() => {
@@ -28,7 +29,7 @@ const Home = () => {
         <HStack>
         {/* <Link href='./Downloads/Sourav_Sahu_Resume.pdf' isExternal>Chkara</Link>
           <a href="./Downloads/Sourav_Sahu_Resume.pdf" download={true}>Resume</a>*/}
-          <a href="./Downloads/Sourav_Sahu_Resume.txt" download={true} ><Button colorScheme="red">Resume</Button></a> 
+          <a href={pdf} download ><Button colorScheme="red">Resume</Button></a> 
           <Button colorScheme="red">GitHub</Button>
           <Button colorScheme="red">LinkedIn</Button>
         </HStack>

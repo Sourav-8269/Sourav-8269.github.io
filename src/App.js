@@ -7,6 +7,7 @@ import Skills from './Routes/Skills';
 import Home from './Routes/Home';
 import Projects from './Routes/Projects';
 import Contact from './Routes/Contact';
+import Github from './Routes/Github';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Home/>
       <About/>
       <Skills/>
+      <Github/>
       <Projects/>
       <Contact/>
 
