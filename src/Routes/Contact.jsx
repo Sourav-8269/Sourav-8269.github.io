@@ -16,6 +16,7 @@ import {
   InputGroup,
   InputLeftElement,
   Link,
+ 
   Textarea,
 } from '@chakra-ui/react';
 import {
@@ -23,6 +24,7 @@ import {
   MdEmail,
   MdLocationOn,
   MdFacebook,
+  
   MdOutlineEmail,
 } from 'react-icons/md';
 import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
@@ -142,57 +144,59 @@ const sendEmail = (e) => {
                   </HStack>
                 </Box>
               </WrapItem>
-              {/* <WrapItem>
+                      
+               <WrapItem>
                 <Box bg="white" borderRadius="lg">
                   <Box m={8} color="#0B0E3F">
-                    <VStack spacing={5}>
-                      <FormControl id="name">
-                        <FormLabel>Your Name</FormLabel>
-                        <InputGroup borderColor="#E0E1E7">
+                    <VStack spacing={5} width="300px" >
+                    
+
+                      <form id="form" action="https://getform.io/f/11050315-1dc2-4dfe-8acc-b47ed919bd74" method="POST" style={{width:"100%"}} >
+                      <FormLabel>Your Name</FormLabel>
+                      {/* <Input type="text" name="name" placeholder="Enter Your Name" /> */}
+                      <InputGroup borderColor="#E0E1E7" mb="5%">
                           <InputLeftElement
                             pointerEvents="none"
                             children={<BsPerson color="gray.800" />}
                           />
                           <Input type="text" size="md" name="name" />
                         </InputGroup>
-                      </FormControl>
-                      <FormControl id="name">
+                        {/* <input style={{width:"100%",border:"1px solid #0D74FF",padding:"3%",borderRadius:"5px"}} type="text" name="name" placeholder="Name"/> */}
                         <FormLabel>Mail</FormLabel>
-                        <InputGroup borderColor="#E0E1E7">
+                        <InputGroup borderColor="#E0E1E7" mb="5%">
                           <InputLeftElement
                             pointerEvents="none"
                             children={<MdOutlineEmail color="gray.800" />}
                           />
-                          <Input type="text" size="md" email="email" />
+                          <Input type="text" size="md" name="email"/>
                         </InputGroup>
-                      </FormControl>
-                      <FormControl id="name">
+                        {/* <input style={{width:"100%",border:"1px solid #0D74FF",padding:"3%",borderRadius:"5px"}} type="text" name="email" placeholder="Email"/> */}
                         <FormLabel>Message</FormLabel>
                         <Textarea
+                        mb="5%"
                           borderColor="gray.300"
                           _hover={{
                             borderRadius: 'gray.300',
                           }}
+                          name="message"
                           placeholder="message"
-                          message="message"
                         />
-                      </FormControl>
-                      <FormControl id="name" float="right">
+                        {/* <textarea style={{width:"100%",border:"1px solid #0D74FF",padding:"3%",borderRadius:"5px"}} name="message" id="" cols="30" rows="10" placeholder="Message"></textarea> */}
+                        {/* <button style={{width:"70%",backgroundColor:"#0D74FF",color:"white",padding:"3%",fontWeight:"bolder",borderRadius:"5px"}} type="submit" >Send Message</button> */}
                         <Button
                           variant="solid"
                           bg="#0D74FF"
                           color="white"
-                          _hover={{}}
-                          
-                          onClick={(e)=>sendEmail(e)}
-                          >
+                          type="submit"
+                          _hover={{}}>
                           Send Message
                         </Button>
-                      </FormControl>
+                      </form>
+                   
                     </VStack>
                   </Box>
                 </Box>
-              </WrapItem> */}
+              </WrapItem> 
             </Wrap>
           </Box>
         </Box>
