@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css"
 import { useEffect } from "react";
 import { Heading } from '@chakra-ui/react';
+import "../CSS/skill.css"
 
 const Skills = () => {
   useEffect(()=>{
@@ -13,7 +14,7 @@ const Skills = () => {
       {/* <h1>Projects</h1> */}
       <Heading   padding="5%" fontFamily="sans-serif" data-aos="zoom-in-up" fontWeight="500">TECHNICAL SKILLS</Heading>
       <div data-aos="zoom-in">
-      <div  style={{display:"grid",marginTop:"0%",gridTemplateColumns:"repeat(auto-fit,minmax(150px,min-content))",justifyContent:"center",gap:"2%",width:"80%",margin:"auto"}}>
+      <div id="skill" style={{display:"grid",marginTop:"0%",gridTemplateColumns:"repeat(auto-fit,minmax(150px,min-content))",justifyContent:"center",gap:"2%",width:"80%",margin:"auto"}}>
         <div data-aos="fade-right" style={{width:"120px",backgroundColor:"#9b9ea8",borderRadius:"15px",height:"140px",marginLeft:"5%",padding:"10%" }} >
           <img src="https://debobrota-haldar.netlify.app/static/media/html.8664168d5bc90b1a24396f85aadbf623.svg" alt="" />
           <p>HTML</p>

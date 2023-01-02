@@ -29,8 +29,9 @@ const Home = () => {
         <HStack>
         {/* <Link href='./Downloads/Sourav_Sahu_Resume.pdf' isExternal>Chkara</Link>
           <a href="./Downloads/Sourav_Sahu_Resume.pdf" download={true}>Resume</a>*/}
-          <a href={pdf} download ><Button colorScheme="red">Resume</Button></a> 
+          <a href={pdf} download="Sourav_Sahu_Resume"><Button colorScheme="red">Resume</Button></a> 
           <a href="https://github.com/Sourav-8269" target="_blank"><Button colorScheme="red">GitHub</Button></a>
+          {/* <a href="https://github.com/Sourav-8269" target="_blank"><img src="https://debobrota-haldar.netlify.app/static/media/github.a855c3975c028d8069f5.png" alt="" srcset="" width="100px" /></a> */}
           <a href="https://www.linkedin.com/in/sourav-kumar-sahu-51b444249/" target="_blank"><Button colorScheme="red">LinkedIn</Button></a>
           <a href="http://" target="_blank" rel="noopener noreferrer"></a>
         </HStack>

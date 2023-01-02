@@ -99,7 +99,7 @@ export default function Simple() {
           />
           <HStack spacing={8} alignItems={'center'} >
             <Link to="/">
-            <Box fontWeight="bold" >Sourav</Box>
+            <Box fontWeight="bold" color="red.400" >Sourav</Box>
             </Link>
             {/* <HStack
               as={'nav'}
@@ -146,7 +146,7 @@ export default function Simple() {
               </Link>
               // </NavLink>
               ))}
-             <a href={pdf} download ><Button fontWeight="bold" >Resume</Button></a> 
+             <a href={pdf} download="Sourav_Sahu_Resume" ><Button fontWeight="bold" >Resume</Button></a> 
             </HStack>
           </HStack>
           <Flex alignItems={'center'} >
