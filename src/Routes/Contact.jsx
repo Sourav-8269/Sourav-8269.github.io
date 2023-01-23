@@ -56,6 +56,7 @@ const sendEmail = (e) => {
     <Container  name="Contact"  maxW="full" mt={0} centerContent overflow="hidden" padding="2%"  >
       <Flex>
         <Box
+        // boxShadow="rgba(50, 50, 93, 0.25) 0px 6px 12px 5px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px"
         data-aos="flip-up"
           bg="#02054B"
           color="white"
@@ -148,10 +149,10 @@ const sendEmail = (e) => {
                <WrapItem>
                 <Box bg="white" borderRadius="lg">
                   <Box m={8} color="#0B0E3F">
-                    <VStack spacing={5} width="300px" >
+                    <VStack spacing={5} >
                     
 
-                      <form id="form" action="https://getform.io/f/11050315-1dc2-4dfe-8acc-b47ed919bd74" method="POST" style={{width:"100%"}} >
+                      <form id="form" action="https://getform.io/f/11050315-1dc2-4dfe-8acc-b47ed919bd74" method="POST" >
                       <FormLabel>Your Name</FormLabel>
                       {/* <Input type="text" name="name" placeholder="Enter Your Name" /> */}
                       <InputGroup borderColor="#E0E1E7" mb="5%">

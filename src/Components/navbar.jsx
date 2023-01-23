@@ -87,7 +87,7 @@ export default function Simple() {
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} position="fixed" overflow="visible" top="0" zIndex="1" width="100%" mb="15%" >
+      <Box bg={useColorModeValue('#FFFFFF', 'gray.900')} px={4} position="fixed" overflow="visible" top="0" zIndex="1" width="100%" mb="15%" boxShadow="lg" >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'} >
           <IconButton
             size={'md'}
@@ -146,7 +146,8 @@ export default function Simple() {
               </Link>
               // </NavLink>
               ))}
-             <a href={pdf} download="Sourav_Sahu_Resume" ><Button fontWeight="bold" >Resume</Button></a> 
+              <a href="https://drive.google.com/file/d/1OE27SM8HNNpT7K2ud6Ypdcj3pLKZu36J/view?usp=sharing" target="_blank" rel="noopener noreferrer"><Button fontWeight="bold" >Resume</Button></a>
+             {/* <a href={pdf} download="Sourav_Sahu_Resume" ><Button fontWeight="bold" >Resume</Button></a>  */}
             </HStack>
           </HStack>
           <Flex alignItems={'center'} >
