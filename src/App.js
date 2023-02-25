@@ -8,6 +8,8 @@ import Home from './Routes/Home';
 import Projects from './Routes/Projects';
 import Contact from './Routes/Contact';
 import Github from './Routes/Github';
+import { Heading,Box } from '@chakra-ui/react';
+import {Link} from "react-router-dom";
 
 function App() {
   return (
@@ -19,6 +21,11 @@ function App() {
       <Github/>
       <Projects/>
       <Contact/>
+
+      <Box padding="1%" >
+        <p style={{color:"",fontFamily:"sans-serif",fontWeight:"bolder"}} >Inspired by<a style={{color:'red'}} href="https://debobrota-haldar.netlify.app/" target="_blank" > Debobrota Haldar</a></p>
+
+      </Box>
 
       {/* <MainRoute/> */}
       {/* <section id="#skills">

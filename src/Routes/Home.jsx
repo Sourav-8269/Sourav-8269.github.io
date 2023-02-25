@@ -8,6 +8,24 @@ import Typewriter from 'typewriter-effect';
 import pdf from "../Downloads/Sourav_Sahu_Resume.pdf"
 
 const Home = () => {
+
+  const DownloadResume = () => {
+  
+    // using Java Script method to get PDF file
+    fetch(pdf).then(response => {
+        response.blob().then(blob => {
+            // Creating new object of PDF file
+            const fileURL = window.URL.createObjectURL(blob);
+            // Setting various property values
+            let alink = document.createElement('a');
+            alink.href = fileURL;
+            alink.download = "Sourav_Sahu_Resume.pdf";
+            alink.click();
+        })
+    })
+   
+}
+
   useEffect(() => {
    AOS.init({delay:400});
   }, []);
@@ -29,7 +47,8 @@ const Home = () => {
         <HStack>
         {/* <Link href='./Downloads/Sourav_Sahu_Resume.pdf' isExternal>Chkara</Link>
           <a href="./Downloads/Sourav_Sahu_Resume.pdf" download={true}>Resume</a>*/}
-          <a href={pdf} download="Sourav_Sahu_Resume"><Button colorScheme="red">Resume</Button></a> 
+          <a href="https://drive.google.com/file/d/1OE27SM8HNNpT7K2ud6Ypdcj3pLKZu36J/view?usp=sharing" onClick={DownloadResume} target="blank"><Button colorScheme="red" >Resume</Button></a>
+          {/* <a href={pdf} download="Sourav_Sahu_Resume"><Button colorScheme="red">Resume</Button></a>  */}
           <a href="https://github.com/Sourav-8269" target="_blank"><Button colorScheme="red">GitHub</Button></a>
           {/* <a href="https://github.com/Sourav-8269" target="_blank"><img src="https://debobrota-haldar.netlify.app/static/media/github.a855c3975c028d8069f5.png" alt="" srcset="" width="100px" /></a> */}
           <a href="https://www.linkedin.com/in/sourav-kumar-sahu-51b444249/" target="_blank"><Button colorScheme="red">LinkedIn</Button></a>

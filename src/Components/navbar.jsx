@@ -70,6 +70,22 @@ const links=[
 
 export default function Simple() {
 
+  const DownloadResume = () => {
+  
+    // using Java Script method to get PDF file
+    fetch(pdf).then(response => {
+        response.blob().then(blob => {
+            // Creating new object of PDF file
+            const fileURL = window.URL.createObjectURL(blob);
+            // Setting various property values
+            let alink = document.createElement('a');
+            alink.href = fileURL;
+            alink.download = "Sourav_Sahu_Resume.pdf";
+            alink.click();
+        })
+    })
+   
+}
  
 
   let activeStyle = {
@@ -146,7 +162,8 @@ export default function Simple() {
               </Link>
               // </NavLink>
               ))}
-              <a href="https://drive.google.com/file/d/1OE27SM8HNNpT7K2ud6Ypdcj3pLKZu36J/view?usp=sharing" target="_blank" rel="noopener noreferrer"><Button fontWeight="bold" >Resume</Button></a>
+              <a href="https://drive.google.com/file/d/1OE27SM8HNNpT7K2ud6Ypdcj3pLKZu36J/view?usp=sharing" onClick={DownloadResume} target="blank"><Button fontWeight="bold" >Resume</Button></a>
+              {/* <Button fontWeight="bold" onClick={pdf} ><a download="Sourav_Sahu_Resume"  href="https://drive.google.com/file/d/1OE27SM8HNNpT7K2ud6Ypdcj3pLKZu36J/view?usp=sharing"   target="_blank" >Resume</a></Button> */}
              {/* <a href={pdf} download="Sourav_Sahu_Resume" ><Button fontWeight="bold" >Resume</Button></a>  */}
             </HStack>
           </HStack>
