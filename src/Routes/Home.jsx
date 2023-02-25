@@ -5,7 +5,7 @@ import Projects from './Projects'
 import { useEffect } from 'react'
 import AOS from "aos"
 import Typewriter from 'typewriter-effect';
-import pdf from "../Downloads/Sourav_Sahu_Resume.pdf"
+import pdf from "../Downloads/fp06_296_Sourav_Sahu_Resume.pdf"
 
 const Home = () => {
 
@@ -19,7 +19,7 @@ const Home = () => {
             // Setting various property values
             let alink = document.createElement('a');
             alink.href = fileURL;
-            alink.download = "Sourav_Sahu_Resume.pdf";
+            alink.download = "fp06_296_Sourav_Sahu_Resume.pdf";
             alink.click();
         })
     })
@@ -56,8 +56,9 @@ const Home = () => {
         </HStack>
       </VStack>
       <VStack  borderRadius="105px" justifyContent="right" alignContent="right">
-        
-      <Image src="https://i.ibb.co/37WKs1W/1-removebg-preview-2-removebg-preview.png"></Image>
+      {/* https://i.ibb.co/r4SZHR3/28-year-old-software-engineer-removebg-preview.png */}
+      <Image src="https://i.ibb.co/Xz0sBfk/28-year-old-software-engineer-removebg-preview-1.png"></Image>
+      {/* <Image  borderRadius="10px" src="https://i.ibb.co/37WKs1W/1-removebg-preview-2-removebg-preview.png"></Image> */}
       </VStack>
       </Stack>
       

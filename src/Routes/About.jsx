@@ -20,12 +20,18 @@ const About = () => {
         {/* Here is Stack mt=10% was there earlier */}
       <VStack flex="2" data-aos="fade-right">
         <Box  padding="3%" borderRadius="15px" mt="10%">
-      <Heading textAlign="left" as="h4" size="md" fontWeight="normal">I am a full-stack web developer from Masai school, a passionate learner who's always willing to learn and work across technology and domains. I love to explore new technologies and leverage them to solve real-life problems. I'm deep into Web Development.</Heading>
+      <Heading textAlign="left" as="h4" size="md" fontWeight="normal">I am a Full-Stack Web Developer. Energetic and goal-driven Full Stack Web developer
+capable of writing production-ready code using HTML,
+CSS, and JavaScript with proficiency in Mern Stack.
+Enthusiastic and proactive person for learning new
+
+technologies, looking for a challenging role in a growth-
+oriented organization.</Heading>
 {/* Earlier size was lg and fontweight was absent */}
         </Box>
       </VStack>
       <VStack flex={1} data-aos="fade-left">
-      <Image  borderRadius="10px" src="https://i.ibb.co/r4SZHR3/28-year-old-software-engineer-removebg-preview.png"></Image>
+      <Image  borderRadius="10px" src="https://i.ibb.co/37WKs1W/1-removebg-preview-2-removebg-preview.png"></Image>
 
       </VStack>
       </Stack>

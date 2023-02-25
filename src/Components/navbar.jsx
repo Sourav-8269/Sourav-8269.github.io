@@ -21,7 +21,7 @@ import {
 import { Link } from 'react-scroll';
 import { HamburgerIcon, CloseIcon,MoonIcon,SunIcon } from '@chakra-ui/icons';
 import {NavLink} from "react-router-dom"
-import pdf from "../Downloads/Sourav_Sahu_Resume.pdf"
+import pdf from "../Downloads/fp06_296_Sourav_Sahu_Resume.pdf"
 // const Links = ['Dashboard', 'Projects', 'Team'];
 const links=[
   {
@@ -80,7 +80,7 @@ export default function Simple() {
             // Setting various property values
             let alink = document.createElement('a');
             alink.href = fileURL;
-            alink.download = "Sourav_Sahu_Resume.pdf";
+            alink.download = "fp06_296_Sourav_Sahu_Resume.pdf";
             alink.click();
         })
     })
