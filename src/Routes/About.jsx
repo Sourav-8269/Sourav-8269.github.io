@@ -20,7 +20,7 @@ const About = () => {
         {/* Here is Stack mt=10% was there earlier */}
       <VStack flex="2" data-aos="fade-right">
         <Box  padding="3%" borderRadius="15px" mt="10%">
-      <Heading textAlign="left" as="h4" size="md" fontWeight="normal">I am a Full-Stack Web Developer. Energetic and goal-driven Full Stack Web developer
+      <Heading textAlign="left" as="h4" size="md" fontWeight="normal">Energetic and goal-driven Full Stack Web developer
 capable of writing production-ready code using HTML,
 CSS, and JavaScript with proficiency in Mern Stack.
 Enthusiastic and proactive person for learning new
