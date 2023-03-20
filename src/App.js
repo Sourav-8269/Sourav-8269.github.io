@@ -22,10 +22,10 @@ function App() {
       <Projects/>
       <Contact/>
 
-      <Box padding="1%" >
+      {/* <Box padding="1%" >
         <p style={{color:"",fontFamily:"sans-serif",fontWeight:"bolder"}} >Inspired by<a style={{color:'red'}} href="https://debobrota-haldar.netlify.app/" target="_blank" > Debobrota Haldar</a></p>
 
-      </Box>
+      </Box> */}
 
       {/* <MainRoute/> */}
       {/* <section id="#skills">

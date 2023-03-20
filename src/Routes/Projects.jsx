@@ -29,7 +29,8 @@ const Projects = () => {
     "https://camo.githubusercontent.com/6e505c76c0cdae2ac857d99581678922107110efa3d907a56b39ace9d3258619/68747470733a2f2f692e6962622e636f2f4a4267464676712f53637265656e73686f742d323032332d30312d32332d3130343132392e706e67",
     "https://i.ibb.co/q19pM8h/Screenshot-1278.png",
     "https://i.ibb.co/XsmbvDF/Screenshot-2022-12-06-225750.png",
-    "https://i.ibb.co/160pYBd/Screenshot-2023-01-23-202548.png"
+    "https://i.ibb.co/160pYBd/Screenshot-2023-01-23-202548.png",
+    "https://i.ibb.co/JyYLtzk/Screenshot-2023-03-03-175205.png"
 
 
   ];
@@ -112,7 +113,7 @@ const Projects = () => {
         </Box>
       </Box>
       
-      <Box  >
+      {/* <Box  >
         <Box data-aos="fade-up" data-aos-duration="1000"  data-aos-easing="linear" boxShadow="rgba(50, 50, 93, 0.25) 0px 6px 12px 5px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px" borderRadius="15px"  padding="3%" mb={10}>
         <Image  src={IMAGE[2]}></Image>
         <HStack height="40px"  m={5}  >
@@ -130,8 +131,30 @@ const Projects = () => {
           apps.</Heading>
           <HStack m={5} justifyContent="space-around" >
           {/* <a href="http://" target="_blank" rel="noopener noreferrer"><FaVideo size="40px"/></a> */}
-          <a href="https://calm-florentine-38a27c.netlify.app/" target="_blank" rel="noopener noreferrer"><FaEye height="20px" size="40px" /></a>
+          {/* <a href="https://calm-florentine-38a27c.netlify.app/" target="_blank" rel="noopener noreferrer"><FaEye height="20px" size="40px" /></a>
           <a href="https://github.com/sudiptapramanik209/happy-notebook-3138" target="_blank" rel="noopener noreferrer"><FaGithub size="40px"/></a>
+        </HStack> 
+        </Box>
+        
+      </Box> */}
+
+      <Box  >
+        <Box data-aos="fade-up" data-aos-duration="1000"  data-aos-easing="linear" boxShadow="rgba(50, 50, 93, 0.25) 0px 6px 12px 5px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px" borderRadius="15px"  padding="3%" mb={10}>
+        <Image  src={IMAGE[4]}></Image>
+        <HStack height="40px"  m={5}  >
+          <FaReact size="fa-lg" />
+          <FaHtml5 size="fa-lg" />
+          <FaCss3Alt  size="fa-lg"/>
+          
+        </HStack>
+
+
+        <Heading as="h1" size="lg" m={5}>Todo App</Heading>
+        <Heading as="p" size="xs">Todo App is an application specially built to keep track of errands or tasks that need to be done.</Heading>
+          <HStack m={5} justifyContent="space-around" >
+          {/* <a href="http://" target="_blank" rel="noopener noreferrer"><FaVideo size="40px"/></a> */}
+          <a href="https://todo-app-2-three.vercel.app/" target="_blank" rel="noopener noreferrer"><FaEye height="20px" size="40px" /></a>
+          <a href="https://github.com/Sourav-8269/My-Todo-App" target="_blank" rel="noopener noreferrer"><FaGithub size="40px"/></a>
         </HStack> 
         </Box>
         
