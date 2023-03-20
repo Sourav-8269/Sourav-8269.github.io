@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2b774560.css",
-    "main.js": "/static/js/main.86228e35.js",
+    "main.js": "/static/js/main.857b1b61.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/fp06_296_Sourav_Sahu_Resume.pdf": "/static/media/fp06_296_Sourav_Sahu_Resume.02157df3d9e10b309f77.pdf",
     "static/media/open-sans-all-700-normal.woff": "/static/media/open-sans-all-700-normal.105e43091a26bbed22fe.woff",
@@ -22,11 +22,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.2b774560.css.map": "/static/css/main.2b774560.css.map",
-    "main.86228e35.js.map": "/static/js/main.86228e35.js.map",
+    "main.857b1b61.js.map": "/static/js/main.857b1b61.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2b774560.css",
-    "static/js/main.86228e35.js"
+    "static/js/main.857b1b61.js"
   ]
 }
