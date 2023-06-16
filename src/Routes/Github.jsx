@@ -17,6 +17,7 @@ const Github = () => {
           fontSize="30px"
           p="10px"
           mt="200px"
+          color="#1da1f2"
           >
           GitHub Statistics & Calender section
         </Text>

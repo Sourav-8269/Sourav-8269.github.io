@@ -1,13 +1,15 @@
 import React from 'react'
-import { Box,Stack,HStack,Heading,VStack ,Image,Button,Link} from '@chakra-ui/react'
+import { Box,Stack,HStack,Heading,VStack ,Image,Button,useColorMode} from '@chakra-ui/react'
 import About from './About'
 import Projects from './Projects'
 import { useEffect } from 'react'
 import AOS from "aos"
 import Typewriter from 'typewriter-effect';
 import pdf from "../Downloads/fp06_296_Sourav_Sahu_Resume.pdf"
+import "../CSS/home.css"
 
 const Home = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
 
   const DownloadResume = () => {
   
@@ -19,7 +21,7 @@ const Home = () => {
             // Setting various property values
             let alink = document.createElement('a');
             alink.href = fileURL;
-            alink.download = "fp06_296_Sourav_Sahu_Resume.pdf";
+            alink.download = "Sourav_Sahu_Resume.pdf";
             alink.click();
         })
     })
@@ -34,9 +36,9 @@ const Home = () => {
       <Stack margin="auto" width="80%" justifyContent="space-between" direction={{ lg: "row",xl:"row", md: "row",base:"column-reverse"   }} >
       <VStack alignItems="self-start"  mt="5%" >
       
-        <Heading textAlign="left" mb={3} as="h2" fontSize="27px" >Hello, my name is</Heading>
-        <Heading textAlign="left" mb={5} as="h1" size="xl" >Sourav Kumar Sahu</Heading>
-        <Heading display="flex" textAlign="left" >I'm a&nbsp;<Heading color="red.500"><Typewriter
+        <Heading textAlign="left" mb={3} as="h2" fontSize="27px" id="about">Hello 👋 my name is</Heading>
+        <Heading textAlign="left" mb={5} as="h1" size="xl" id="about">Sourav Kumar Sahu</Heading>
+        <Heading display="flex" textAlign="left" id="about">I'm a &nbsp;<Heading color="#1da1f2" id="about"><Typewriter
   options={{
     
     strings: [' Web Developer.', ' Full Stack Web Developer.'],
@@ -44,14 +46,14 @@ const Home = () => {
     loop: true,
   }}
 /></Heading></Heading>
-        <HStack>
+        <HStack id="socialButtonsDiv" >
         {/* <Link href='./Downloads/Sourav_Sahu_Resume.pdf' isExternal>Chkara</Link>
           <a href="./Downloads/Sourav_Sahu_Resume.pdf" download={true}>Resume</a>*/}
-          <a href="https://drive.google.com/file/d/1OE27SM8HNNpT7K2ud6Ypdcj3pLKZu36J/view?usp=sharing" onClick={DownloadResume} target="blank"><Button colorScheme="red" >Resume</Button></a>
+          <a href="https://drive.google.com/file/d/1OE27SM8HNNpT7K2ud6Ypdcj3pLKZu36J/view?usp=sharing" onClick={DownloadResume} target="blank"><Button id="socialButtons">Resume</Button></a>
           {/* <a href={pdf} download="Sourav_Sahu_Resume"><Button colorScheme="red">Resume</Button></a>  */}
-          <a href="https://github.com/Sourav-8269" target="_blank"><Button colorScheme="red">GitHub</Button></a>
+          <a href="https://github.com/Sourav-8269" target="_blank"><Button id="socialButtons">GitHub</Button></a>
           {/* <a href="https://github.com/Sourav-8269" target="_blank"><img src="https://debobrota-haldar.netlify.app/static/media/github.a855c3975c028d8069f5.png" alt="" srcset="" width="100px" /></a> */}
-          <a href="https://www.linkedin.com/in/sourav-kumar-sahu-51b444249/" target="_blank"><Button colorScheme="red">LinkedIn</Button></a>
+          <a href="https://www.linkedin.com/in/sourav-kumar-sahu-51b444249/" target="_blank"><Button id="socialButtons">LinkedIn</Button></a>
           
         </HStack>
       </VStack>

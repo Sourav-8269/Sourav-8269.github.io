@@ -1,0 +1,17 @@
+#socialButtonsDiv{
+    font-weight: 500;
+    color:white;
+}
+#socialButtons{
+    background-color: #1da1f2;
+    font-weight: 500;
+}
+#socialButtons:hover{
+    background-color: #4299e1;
+}
+#about{
+    /* border: 1px solid #1da1f2; */
+    font-family:"Poppins";
+    /* font-weight:medium; */
+    font-weight: 500;
+}

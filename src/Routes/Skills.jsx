@@ -12,7 +12,7 @@ const Skills = () => {
   return (
     <div name="Skills"  padding="5%" >
       {/* <h1>Projects</h1> */}
-      <Heading   padding="6%" fontFamily="sans-serif" data-aos="zoom-in-up" fontWeight="500">TECHNICAL SKILLS</Heading>
+      <Heading padding="6%" data-aos="zoom-in-up" id="heading">TECHNICAL SKILLS</Heading>
       <div data-aos="zoom-in">
       <div id="skill" style={{display:"grid",marginTop:"0%",gridTemplateColumns:"repeat(auto-fit,minmax(150px,min-content))",justifyContent:"center",gap:"2%",width:"80%",margin:"auto"}}>
         <div data-aos="fade-right"  style={{width:"120px",backgroundColor:"#9b9ea8",borderRadius:"15px",height:"140px",marginLeft:"5%",padding:"10%",cursor:"pointer" }}>

@@ -17,10 +17,11 @@ import {
   Image,
   useColorMode,
   Stack,
+  Collapse,
 } from '@chakra-ui/react';
 import { Link } from 'react-scroll';
 import { HamburgerIcon, CloseIcon,MoonIcon,SunIcon } from '@chakra-ui/icons';
-import {NavLink} from "react-router-dom"
+import {NavLink as RouterLink} from "react-router-dom"
 import pdf from "../Downloads/fp06_296_Sourav_Sahu_Resume.pdf"
 // const Links = ['Dashboard', 'Projects', 'Team'];
 const links=[
@@ -80,42 +81,32 @@ export default function Simple() {
             // Setting various property values
             let alink = document.createElement('a');
             alink.href = fileURL;
-            alink.download = "fp06_296_Sourav_Sahu_Resume.pdf";
+            alink.download = "Sourav_Sahu_Resume.pdf";
             alink.click();
         })
     })
    
 }
- 
-
-  let activeStyle = {
-    textDecoration: "none",
-    color: "red"
-  };
-
-  let normalStyle = {
-    textDecoration: "none",
-    // color: "black"
-  };
 
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
     <>
-      <Box bg={useColorModeValue('#FFFFFF', 'gray.900')} px={4} position="fixed" overflow="visible" top="0" zIndex="1" width="100%" mb="15%" boxShadow="lg" >
+      <Box bg={useColorModeValue('#FFFFFF', 'gray.900')} px={4} position="fixed" overflow="visible" top="0" zIndex="1" width="100%" mb="15%" boxShadow="lg" maxW="100vw" background={colorMode === 'light' ?"rgba(255,255,255,0.5)":"rgba(0, 0, 0, 0.5)"} backdropFilter="blur(10px)" >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'} >
           <IconButton
             size={'md'}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
+            variant="ghost"
             onClick={isOpen ? onClose : onOpen}
             
           />
           <HStack spacing={8} alignItems={'center'} >
             <Link to="/">
-            <Box fontWeight="bold" color="red.400" >Sourav</Box>
+            <Box fontWeight="bold" color="#1da1f2" id="logo" >Sourav</Box>
             </Link>
             {/* <HStack
               as={'nav'}
@@ -140,29 +131,21 @@ export default function Simple() {
               <Link
               smooth duration={1000}
               
-            
-              as={NavLink}
-              
+              activeClass='active'
+              as={RouterLink}
+              spy={true}
                 key={link.id}
-                
-                // {({ _Active }) => (isActive ? activeStyle : normalStyle)}
                 to={link.title}
-                _activeLink={{
-                  color:"red.800",
-                  bgColor:"blue"
-                  }}
                 // end
               >
                 
-                <Box _hover={{color:"red.500",cursor:"pointer",textUnderlinePosition:"#2D3748"}}
-                fontWeight="bold"
-    _groupHover={{ color: 'tomato' }}>
+                <Box id="navbar_a" fontWeight={500}>
                   {link.title}
                   </Box>
               </Link>
               // </NavLink>
               ))}
-              <a href="https://drive.google.com/file/d/1OE27SM8HNNpT7K2ud6Ypdcj3pLKZu36J/view?usp=sharing" onClick={DownloadResume} target="blank"><Button fontWeight="bold" >Resume</Button></a>
+              <a href="https://drive.google.com/file/d/1OE27SM8HNNpT7K2ud6Ypdcj3pLKZu36J/view?usp=sharing" onClick={DownloadResume} target="blank"><Button fontWeight={500} variant="outline">Resume</Button></a>
               {/* <Button fontWeight="bold" onClick={pdf} ><a download="Sourav_Sahu_Resume"  href="https://drive.google.com/file/d/1OE27SM8HNNpT7K2ud6Ypdcj3pLKZu36J/view?usp=sharing"   target="_blank" >Resume</a></Button> */}
              {/* <a href={pdf} download="Sourav_Sahu_Resume" ><Button fontWeight="bold" >Resume</Button></a>  */}
             </HStack>
@@ -179,7 +162,7 @@ export default function Simple() {
                 
 
               </MenuButton>
-            <Button onClick={toggleColorMode}>
+            <Button onClick={toggleColorMode} variant="ghost" >
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
             </Button>
               {/* <MenuList>
@@ -191,9 +174,8 @@ export default function Simple() {
             </Menu>
           </Flex>
         </Flex>
-
-        {isOpen ? (
-          <Box pb={4} display={{ md: 'none' }} >
+        <Collapse in={isOpen} animateOpacity>
+          <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
             {links.map((link) => (
               <Link
@@ -201,16 +183,16 @@ export default function Simple() {
 
                 key={link.id}
                 _hover={{ bg: '#0D74FF' }}
-                // style={({ isActive }) => (isActive ? activeStyle : normalStyle)}
                 to={link.title}
                 // end
               >
                 {link.title}
               </Link>
       ))}
+      <a href="https://drive.google.com/file/d/1OE27SM8HNNpT7K2ud6Ypdcj3pLKZu36J/view?usp=sharing" onClick={DownloadResume} target="blank"><Button fontWeight={500} variant="ghost" >Resume</Button></a>
             </Stack>
           </Box>
-        ) : null}
+        </Collapse>
       </Box>
     </>
   );

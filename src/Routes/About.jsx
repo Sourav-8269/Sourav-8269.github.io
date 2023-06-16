@@ -15,7 +15,7 @@ const About = () => {
     <Box  width="80%" margin="auto" name="About" mt="5%" padding="6%" >
       {/* <Stack> */}
       
-      <Heading fontFamily="sans-serif" data-aos="zoom-in-up" fontWeight="500">ABOUT ME</Heading>
+      <Text data-aos="zoom-in-up" fontSize="36px" id="heading">ABOUT ME</Text>
       <Stack justifyContent="space-around" direction={{ lg: "row",xl:"row", md: "row",base:"column-reverse"   }} spacing="50px">
         {/* Here is Stack mt=10% was there earlier */}
       <VStack flex="2" data-aos="fade-right">

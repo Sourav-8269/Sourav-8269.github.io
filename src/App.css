@@ -1,10 +1,31 @@
 .App {
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight:medium;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family:"Poppins" !important;
+  /* font-weight:medium; */
+  font-weight: 500;
  
 }
 
+#heading{
+  font-family:"Poppins";
+  /* font-weight:medium; */
+  color: #1da1f2;
+  font-weight: 500;
+}
+
+#navbar_a:hover{
+  font-weight: 500;
+  padding-bottom: 2px; /* Adjust the desired distance */
+  border-bottom: 2px solid #1da1f2 ; /* Specify the underline style */
+  line-height: 1.5;
+  transition: hover 0.3s ease-in-out, left 0.3s ease-in-out;
+  color: #1da1f2;
+  cursor: pointer;
+}
+.active{
+  color: #1da1f2; /* Adjust the desired distance */
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -28,15 +49,22 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#logo {
+  transition: transform 1s;
+  animation: rotate 2s;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
+#logo:hover {
+  animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
+
