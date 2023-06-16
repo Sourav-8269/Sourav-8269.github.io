@@ -9,8 +9,12 @@
 
 #heading{
   font-family:"Poppins";
-  /* font-weight:medium; */
   color: #1da1f2;
+  font-weight: 500;
+}
+
+#projectText{
+  font-family:"Poppins";
   font-weight: 500;
 }
 

@@ -68,7 +68,7 @@ const sendEmail = (e) => {
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
                 <Box>
-                  <Heading id="heading" color={"white"}>Contact</Heading>
+                  <Heading id="heading" style={{color:"white"}}>Contact</Heading>
                   <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
                     Fill up the form below to contact
                   </Text>
@@ -180,7 +180,7 @@ const sendEmail = (e) => {
                             borderRadius: 'gray.300',
                           }}
                           name="message"
-                          placeholder="message"
+                          placeholder="Your message"
                         />
                         {/* <textarea style={{width:"100%",border:"1px solid #0D74FF",padding:"3%",borderRadius:"5px"}} name="message" id="" cols="30" rows="10" placeholder="Message"></textarea> */}
                         {/* <button style={{width:"70%",backgroundColor:"#0D74FF",color:"white",padding:"3%",fontWeight:"bolder",borderRadius:"5px"}} type="submit" >Send Message</button> */}
@@ -188,6 +188,7 @@ const sendEmail = (e) => {
                           variant="solid"
                           bg="#0D74FF"
                           color="white"
+                          fontWeight={500}
                           type="submit"
                           _hover={{}}>
                           Send Message
