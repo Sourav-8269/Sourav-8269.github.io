@@ -1,15 +1,12 @@
 import React from 'react'
-import { Box,Stack,HStack,Heading,VStack ,Image,Button,useColorMode} from '@chakra-ui/react'
-import About from './About'
-import Projects from './Projects'
+import { Box,Stack,HStack,Heading,VStack ,Image,Button} from '@chakra-ui/react'
 import { useEffect } from 'react'
 import AOS from "aos"
 import Typewriter from 'typewriter-effect';
-import pdf from "../Downloads/fp06_296_Sourav_Sahu_Resume.pdf"
+import pdf from "../Downloads/Sourav_Sahu_Resume.pdf"
 import "../CSS/home.css"
 
 const Home = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
 
   const DownloadResume = () => {
   

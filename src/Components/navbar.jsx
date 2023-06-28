@@ -22,7 +22,7 @@ import {
 import { Link } from 'react-scroll';
 import { HamburgerIcon, CloseIcon,MoonIcon,SunIcon } from '@chakra-ui/icons';
 import {NavLink as RouterLink} from "react-router-dom"
-import pdf from "../Downloads/fp06_296_Sourav_Sahu_Resume.pdf"
+import pdf from "../Downloads/Sourav_Sahu_Resume.pdf"
 // const Links = ['Dashboard', 'Projects', 'Team'];
 const links=[
   {
