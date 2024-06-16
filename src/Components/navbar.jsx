@@ -1,20 +1,13 @@
-import { ReactNode } from 'react';
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
-
   IconButton,
   Button,
   Menu,
   MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
-  Image,
   useColorMode,
   Stack,
   Collapse,
@@ -91,6 +84,19 @@ export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
 
+  const handleClick = () => {
+    toggleColorMode();
+    const styleEl = document.createElement('style');
+    const cssText = document.createTextNode(
+      'html * { transition: color, background-color 0.3s ease-in-out!important }',
+    );
+    styleEl.appendChild(cssText);
+    document.head.appendChild(styleEl);
+    setTimeout(() => {
+      document.head.removeChild(styleEl);
+    }, 300);
+  };
+
   return (
     <>
       <Box bg={useColorModeValue('#FFFFFF', 'gray.900')} px={4} position="fixed" overflow="visible" top="0" zIndex="1" width="100%" mb="15%" boxShadow="lg" maxW="100vw" background={colorMode === 'light' ?"rgba(255,255,255,0.5)":"rgba(0, 0, 0, 0.5)"} backdropFilter="blur(10px)" >
@@ -146,8 +152,6 @@ export default function Simple() {
               // </NavLink>
               ))}
               <a href="https://drive.google.com/file/d/1OE27SM8HNNpT7K2ud6Ypdcj3pLKZu36J/view?usp=sharing" onClick={DownloadResume} target="blank"><Button fontWeight={500} variant="outline">Resume</Button></a>
-              {/* <Button fontWeight="bold" onClick={pdf} ><a download="Sourav_Sahu_Resume"  href="https://drive.google.com/file/d/1OE27SM8HNNpT7K2ud6Ypdcj3pLKZu36J/view?usp=sharing"   target="_blank" >Resume</a></Button> */}
-             {/* <a href={pdf} download="Sourav_Sahu_Resume" ><Button fontWeight="bold" >Resume</Button></a>  */}
             </HStack>
           </HStack>
           <Flex alignItems={'center'} >
@@ -158,19 +162,10 @@ export default function Simple() {
                 variant={'link'}
                 cursor={'pointer'}
                 minW={0}>
-                
-                
-
               </MenuButton>
-            <Button onClick={toggleColorMode} variant="ghost" >
-                {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-            </Button>
-              {/* <MenuList>
-                <MenuItem>Link 1</MenuItem>
-                <MenuItem>Link 2</MenuItem>
-                <MenuDivider />
-                <MenuItem>Link 3</MenuItem>
-              </MenuList> */}
+              <Button onClick={handleClick} variant="ghost" >
+                  {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+              </Button>
             </Menu>
           </Flex>
         </Flex>

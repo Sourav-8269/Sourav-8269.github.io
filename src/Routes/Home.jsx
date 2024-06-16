@@ -44,20 +44,16 @@ const Home = () => {
   }}
 /></Heading></Heading>
         <HStack id="socialButtonsDiv" >
-        {/* <Link href='./Downloads/Sourav_Sahu_Resume.pdf' isExternal>Chkara</Link>
-          <a href="./Downloads/Sourav_Sahu_Resume.pdf" download={true}>Resume</a>*/}
           <a href="https://drive.google.com/file/d/1OE27SM8HNNpT7K2ud6Ypdcj3pLKZu36J/view?usp=sharing" onClick={DownloadResume} target="blank"><Button id="socialButtons">Resume</Button></a>
           {/* <a href={pdf} download="Sourav_Sahu_Resume"><Button colorScheme="red">Resume</Button></a>  */}
           <a href="https://github.com/Sourav-8269" target="_blank"><Button id="socialButtons">GitHub</Button></a>
-          {/* <a href="https://github.com/Sourav-8269" target="_blank"><img src="https://debobrota-haldar.netlify.app/static/media/github.a855c3975c028d8069f5.png" alt="" srcset="" width="100px" /></a> */}
           <a href="https://www.linkedin.com/in/sourav-kumar-sahu-51b444249/" target="_blank"><Button id="socialButtons">LinkedIn</Button></a>
           
         </HStack>
       </VStack>
       <VStack  borderRadius="105px" justifyContent="right" alignContent="right">
       {/* https://i.ibb.co/r4SZHR3/28-year-old-software-engineer-removebg-preview.png */}
-      <Image src="https://i.ibb.co/Xz0sBfk/28-year-old-software-engineer-removebg-preview-1.png"></Image>
-      {/* <Image  borderRadius="10px" src="https://i.ibb.co/37WKs1W/1-removebg-preview-2-removebg-preview.png"></Image> */}
+      <Image src="/projects-img/software-engineer.webp"></Image>
       </VStack>
       </Stack>
       

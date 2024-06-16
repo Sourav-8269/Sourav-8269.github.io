@@ -34,18 +34,11 @@ const Github = () => {
                     fontSize={15}
                 />
             </Box>
-
-
-
             <Box >
-            <Image data-aos="flip-left" boxShadow='dark-lg' w={["85%","70%","50%"]} borderRadius="2%" mt="50px" src="https://camo.githubusercontent.com/fb78673fd92b1d82683fa499d34f62586094caae8ba1c06d6d456b0dde82c693/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67733f757365726e616d653d736f757261762d383236392673686f775f69636f6e733d74727565266c6f63616c653d656e266c61796f75743d636f6d70616374" alt="Sourav-8269" />
-            <Image data-aos="flip-right" boxShadow='dark-lg' w={["85%","70%","50%"]} borderRadius="2%" mt="50px"  src="https://camo.githubusercontent.com/1b9a9c309d7290f1a0f07c0b7e5ba05ce6061ea129b176c01d428de481ef42bf/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d736f757261762d3832363926" alt="Sourav-8269" />
-            <Image data-aos="flip-left" boxShadow='dark-lg' w={["85%","70%","50%"]} borderRadius="2%" mt="50px"  src="https://camo.githubusercontent.com/dad36f2cab157989dd52baf3a00fa5566300853aa68fc72af5a7f1178b7985e2/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d736f757261762d383236392673686f775f69636f6e733d74727565266c6f63616c653d656e" alt="Sourav-8269" />
+              <Image data-aos="flip-left" boxShadow='dark-lg' w={["85%","70%","50%"]} borderRadius="2%" mt="50px" src="https://camo.githubusercontent.com/6d006b1c0512db6c27d23e65fe55ac590cbe90f6bc4aef7c384c3b0e681dee4b/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d736f757261762d3832363926" alt="Sourav-8269" />
+              <Image data-aos="flip-right" boxShadow='dark-lg' w={["85%","70%","50%"]} borderRadius="2%" mt="50px"  src="https://camo.githubusercontent.com/8b78ec78ee40adc49dc39996c19b3b89797beda0c35bda75bc907e9f733415fa/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d736f757261762d383236392673686f775f69636f6e733d74727565266c6f63616c653d656e" alt="Sourav-8269" />
+              <Image data-aos="flip-left" boxShadow='dark-lg' w={["85%","70%","50%"]} borderRadius="2%" mt="50px"  src="https://camo.githubusercontent.com/e2da50ae98efce299d14a79752b609fa5478abe4ef46596b4e58bacf1d478b99/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67733f757365726e616d653d736f757261762d383236392673686f775f69636f6e733d74727565266c6f63616c653d656e266c61796f75743d636f6d70616374" alt="Sourav-8269" />
             </Box>
-
-            
-           
-        
         </Box>
 
 

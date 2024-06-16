@@ -10,24 +10,20 @@ import {
   HStack,
   Wrap,
   WrapItem,
-  FormControl,
   FormLabel,
   Input,
   InputGroup,
   InputLeftElement,
   Link,
- 
   Textarea,
 } from '@chakra-ui/react';
 import {
   MdPhone,
   MdEmail,
   MdLocationOn,
-  MdFacebook,
-  
   MdOutlineEmail,
 } from 'react-icons/md';
-import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
+import { BsGithub, BsPerson } from 'react-icons/bs';
 import {FaLinkedin} from 'react-icons/fa';
 import {EmailIcon} from "@chakra-ui/icons"
 import { useEffect } from 'react';
@@ -74,26 +70,30 @@ const sendEmail = (e) => {
                   </Text>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                     <VStack pl={0} spacing={3} alignItems="flex-start">
-                      <Button
-                        size="md"
-                        height="48px"
-                        width="300px"
-                        variant="ghost"
-                        color="#DCE2FF"
-                        _hover={{ border: '2px solid #1C6FEB' }}
-                        leftIcon={<MdPhone color="#1970F1" size="20px" />}>
-                        +91-9835888269
-                      </Button>
-                      <Button
-                        size="md"
-                        height="48px"
-                        width="300px"
-                        variant="ghost"
-                        color="#DCE2FF"
-                        _hover={{ border: '2px solid #1C6FEB' }}
-                        leftIcon={<MdEmail color="#1970F1" size="20px" />}>
-                        souravsahu70047@gmail.com
-                      </Button>
+                      <Link href="tel:+919835888269">
+                        <Button
+                          size="md"
+                          height="48px"
+                          width="300px"
+                          variant="ghost"
+                          color="#DCE2FF"
+                          _hover={{ border: '2px solid #1C6FEB' }}
+                          leftIcon={<MdPhone color="#1970F1" size="20px" />}>
+                          +91-9835888269
+                        </Button>
+                      </Link>
+                      <Link href='mailto:souravsahu70047@gmail.com'>
+                        <Button
+                          size="md"
+                          height="48px"
+                          width="300px"
+                          variant="ghost"
+                          color="#DCE2FF"
+                          _hover={{ border: '2px solid #1C6FEB' }}
+                          leftIcon={<MdEmail color="#1970F1" size="20px" />}>
+                          souravsahu70047@gmail.com
+                        </Button>
+                      </Link>
                       <Button
                         size="md"
                         height="48px"
@@ -160,7 +160,7 @@ const sendEmail = (e) => {
                             pointerEvents="none"
                             children={<BsPerson color="gray.800" />}
                           />
-                          <Input type="text" size="md" name="name" />
+                          <Input type="text" size="md" name="name" placeholder="Your name" />
                         </InputGroup>
                         {/* <input style={{width:"100%",border:"1px solid #0D74FF",padding:"3%",borderRadius:"5px"}} type="text" name="name" placeholder="Name"/> */}
                         <FormLabel>Mail</FormLabel>
@@ -169,7 +169,7 @@ const sendEmail = (e) => {
                             pointerEvents="none"
                             children={<MdOutlineEmail color="gray.800" />}
                           />
-                          <Input type="text" size="md" name="email"/>
+                          <Input type="text" size="md" name="email" placeholder="Your email"/>
                         </InputGroup>
                         {/* <input style={{width:"100%",border:"1px solid #0D74FF",padding:"3%",borderRadius:"5px"}} type="text" name="email" placeholder="Email"/> */}
                         <FormLabel>Message</FormLabel>
